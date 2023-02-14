@@ -2,7 +2,7 @@ import React from 'react';
 import shortid from 'shortid';
 import './styles.css';
 import perfilPhoto from '../../images/Foto.jpg';
-import { BsFileEarmarkPdfFill, BsWhatsapp } from 'react-icons/bs';
+import { BsFileEarmarkPdfFill, BsWhatsapp, BsDot } from 'react-icons/bs';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { FiGithub } from 'react-icons/fi';
 import { DiReact, DiJavascript1, DiPython } from 'react-icons/di';
@@ -138,12 +138,9 @@ const AboutMe = () => {
   ];
 
   const courses = courseList.map(item => {
-    return courseList.at(-1) !== item ? (
+    return (
       <a href={item.link} target="_blank" rel="noreferrer" className="link__course" key={shortid.generate()}>
-        {item.name} {item.icon} | |{' '}
-      </a>
-    ) : (
-      <a href={item.link} target="_blank" rel="noreferrer" className="link__course" key={shortid.generate()}>
+        <BsDot />
         {item.name} {item.icon}
       </a>
     );
@@ -174,7 +171,7 @@ const AboutMe = () => {
             img-about
           "
           >
-            <img src={perfilPhoto} className="img-fluid" alt="" />
+            <img src={perfilPhoto} className="img-fluid" alt="perfil" loading="lazy" />
           </div>
           <div className="col-lg-6 pt-4 pt-lg-0 content aos-init aos-animate" data-aos="fade-left" data-aos-delay="100">
             <div className="info">

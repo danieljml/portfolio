@@ -10,7 +10,6 @@
   font-size: 18px;
   background: #fff;
   height: 100vh !important;
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -43,7 +42,7 @@
   border: 3px solid #f1f1f1;
   border-radius: 10px;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -121,10 +120,9 @@
   font-weight: 600;
   padding: 12px 30px;
   border: 1.5px solid #ffffff;
-  border-radius: 5px;
+  border-radius: 18px;
   background-color: #000000;
   box-shadow: 0px 0px 25px rgb(0 0 0 / 18%);
-  border-radius: 18px;
   margin: 8px auto;
   transition: all 0.5s ease;
   text-transform: uppercase;
@@ -144,7 +142,7 @@
 
 @media screen and (max-width: 720px) {
   .swiper .swiper__content {
-    width: 75%;
+    width: 80%;
     height: 60%;
   }
   .swiper .content {

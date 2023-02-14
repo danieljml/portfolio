@@ -1,9 +1,11 @@
-.services .boxer {
+.service__cards {
   display: flex;
   justify-content: center;
+  column-gap: 1rem;
+  padding: 0 12px;
 }
 
-.services .box {
+.services .card {
   text-align: center;
   border: 1px solid rgb(0 0 0 / 12%);
   backdrop-filter: saturate(180%) blur(20px);
@@ -14,13 +16,14 @@
   transition: all 0.3s ease;
   color: rgb(80, 80, 80);
   font-weight: 500;
+  background-color: unset !important;
 }
 
-.box h5 {
+.card h5 {
   font-weight: 700;
 }
 
-.services .box:hover {
+.services .card:hover {
   background-color: rgba(255, 255, 255, 0.377);
   transform: scale(1.04);
   color: black;
@@ -43,7 +46,7 @@
   transition: all 0.7s ease;
 }
 
-.box .icon {
+.service__cards .icon {
   display: grid;
   place-items: center;
   background-color: rgba(255, 255, 255, 0.24);

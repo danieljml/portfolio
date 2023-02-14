@@ -58,7 +58,9 @@ function Navbar() {
       <nav loading="lazy" className="nav_ux">
         <div className="nav__block_ux">
           {navLinks.map(item => (
-            <li key={shortid.generate()}>{item.icon}</li>
+            <li key={shortid.generate()}>
+              <a href={item.href}>{item.icon}</a>
+            </li>
           ))}
         </div>
       </nav>

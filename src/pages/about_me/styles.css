@@ -11,9 +11,18 @@ section {
   font-family: 'Poppins', sans-serif;
 }
 
+.courses__content {
+  display: flex;
+}
+
 .link__course {
   color: rgb(80, 80, 80);
   font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.link__course:hover {
+  color: rgb(0, 0, 0);
 }
 
 .img-fluid {
@@ -138,5 +147,10 @@ section {
 
   .skills .title-skills {
     margin: 60px 0;
+  }
+
+  .courses__content {
+    display: flex;
+    flex-direction: column;
   }
 }

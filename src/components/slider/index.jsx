@@ -23,7 +23,7 @@ const SliderComponent = () => {
         slidesPerView={1}
         modules={[Autoplay, Pagination]}
         autoplay={{
-          delay: 3000,
+          delay: 4000,
           pauseOnMouseEnter: true,
           disableOnInteraction: false,
         }}
@@ -36,10 +36,10 @@ const SliderComponent = () => {
       >
         {sliderInfo.map(item => (
           <SwiperSlide className="swiper-slide" key={shortid.generate()}>
-            <img loading="lazy" className="d-block w-100" src={item.image} alt={item.image} />
+            <img className="d-block w-100" src={item.image} alt={item.image} />
           </SwiperSlide>
         ))}
-        <article loading="lazy" className="swiper__content">
+        <article className="swiper__content">
           <div className="content">
             <h6 className="content__welcome">Hello, my name is</h6>
             <h1 className="content__name">Daniel Martinez</h1>

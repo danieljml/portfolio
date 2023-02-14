@@ -32,12 +32,10 @@ const Services = () => {
   ];
 
   const services = servicesList.map(item => (
-    <div className="col-12 col-lg-6 card-services" key={shortid.generate()}>
-      <div className="box" data-aos={item.dataAos} data-aos-duration="1000">
-        <div className="icon">{item.icon}</div>
-        <h5>{item.title}</h5>
-        <p>{item.description}</p>
-      </div>
+    <div className="card col-12 col-lg-5" data-aos={item.dataAos} data-aos-duration="1000" key={shortid.generate()}>
+      <div className="icon">{item.icon}</div>
+      <h5>{item.title}</h5>
+      <p>{item.description}</p>
     </div>
   ));
   return (
@@ -46,7 +44,7 @@ const Services = () => {
       <h1 className="title text-center mt-4">Quality services</h1>
       <p className="text-center">IDEAS, CREATIVITY AND DESIGNS</p>
       <div className="container mt-5">
-        <div className="row boxer">{services}</div>
+        <div className="service__cards row">{services}</div>
       </div>
     </section>
   );
