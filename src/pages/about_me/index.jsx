@@ -1,0 +1,200 @@
+import React from 'react';
+import shortid from 'shortid';
+import './styles.css';
+import perfilPhoto from '../../images/Foto.jpg';
+import { BsFileEarmarkPdfFill, BsWhatsapp } from 'react-icons/bs';
+import { FaLinkedinIn } from 'react-icons/fa';
+import { FiGithub } from 'react-icons/fi';
+import { DiReact, DiJavascript1, DiPython } from 'react-icons/di';
+
+import { OverlayTrigger, Tooltip } from 'react-bootstrap';
+
+const AboutMe = () => {
+  const skillList = [
+    {
+      skill: 'HTML-100%',
+      ariaValueNow: '100',
+      progressBar: '100%',
+    },
+    {
+      skill: 'CSS-90%',
+      ariaValueNow: '90',
+      progressBar: '90%',
+    },
+    {
+      skill: 'Bootstrap-90%',
+      ariaValueNow: '90',
+      progressBar: '90%',
+    },
+    {
+      skill: 'Material UI-90%',
+      ariaValueNow: '90',
+      progressBar: '90%',
+    },
+    {
+      skill: 'JavaScript-90%',
+      ariaValuenow: '90',
+      progressBar: '90%',
+    },
+    {
+      skill: 'Node-80%',
+      ariaValueNow: '80',
+      progressBar: '80%',
+    },
+    {
+      skill: 'React-80%',
+      ariaValueNow: '80',
+      progressBar: '80%',
+    },
+    {
+      skill: 'Python-90%',
+      ariaValueNow: '90',
+      progressBar: '90%',
+    },
+    {
+      skill: 'FastApi-80%',
+      ariaValueNow: '80',
+      progressBar: '80%',
+    },
+    {
+      skill: 'MYSQL-80%',
+      ariaValueNow: '80',
+      progressBar: '80%',
+    },
+    {
+      skill: 'Figma-80%',
+      ariaValueNow: '80',
+      progressBar: '80%',
+    },
+    {
+      skill: 'Wordpress-80%',
+      ariaValueNow: '80',
+      progressBar: '80%',
+    },
+  ];
+
+  const linkList = [
+    { link: 'https://github.com/danieljml', icon: <FiGithub />, description: 'Github' },
+    { link: 'https://www.linkedin.com/in/daniel-j-martinez-5a4a171ba/', icon: <FaLinkedinIn />, description: 'Linkedin' },
+    {
+      link: 'https://api.whatsapp.com/send?phone=+584121938935&text=Hello, I come from your website!',
+      icon: <BsWhatsapp />,
+      description: 'Whatsapp',
+    },
+    { link: '../pdf/Curriculum Daniel-Martinez en.pdf', icon: <BsFileEarmarkPdfFill />, description: 'Download CV' },
+  ];
+
+  const habilities = skillList.map(item => (
+    <div key={shortid.generate()} className="progress">
+      <span className="skill">{item.skill}</span>
+      <div className="progress-bar-wrap">
+        {
+          <div
+            className="progress-bar"
+            role="progressbar"
+            aria-valuenow={item.ariaValueNow}
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style={{ width: item.progressBar }}
+            data-aos="fade-right"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-sine"
+          ></div>
+        }
+      </div>
+    </div>
+  ));
+
+  const renderTooltip = (e, description) => (
+    <Tooltip id="button-tooltip" {...e}>
+      {description}
+    </Tooltip>
+  );
+
+  const links = linkList.map(item => (
+    <OverlayTrigger key={shortid.generate()} placement="bottom" delay={{ show: 250, hide: 300 }} overlay={e => renderTooltip(e, item.description)}>
+      <a href={item.link} target="_blank" className="icon" rel="noreferrer" download>
+        {item.icon}
+      </a>
+    </OverlayTrigger>
+  ));
+
+  const courseList = [
+    {
+      link: 'https://www.udemy.com/certificate/UC-17363385-c1fc-4589-aead-c2548a5128d3/',
+      name: 'Master in Python',
+      icon: <DiPython className="course__icon icon" />,
+    },
+    {
+      link: 'https://www.udemy.com/certificate/UC-f1de1340-97ab-45ff-856b-026e3c4101e6/',
+      name: 'Master in Javascript',
+      icon: <DiJavascript1 className="course__icon icon" />,
+    },
+    {
+      link: 'https://www.udemy.com/certificate/UC-43f1b5f9-962b-437e-8993-52147cf41580/',
+      name: 'React and Firebase',
+      icon: <DiReact className="course__icon icon" />,
+    },
+  ];
+
+  const courses = courseList.map(item => {
+    return courseList.at(-1) !== item ? (
+      <a href={item.link} target="_blank" rel="noreferrer" className="link__course" key={shortid.generate()}>
+        {item.name} {item.icon} | |{' '}
+      </a>
+    ) : (
+      <a href={item.link} target="_blank" rel="noreferrer" className="link__course" key={shortid.generate()}>
+        {item.name} {item.icon}
+      </a>
+    );
+  });
+
+  return (
+    <section className="skills pb-0" id="about">
+      <div className="container">
+        <h1 className="title text-center mt-4">ABOUT ME</h1>
+        <p className="text-center">INFORMATION ABOUT ME</p>
+        <p className="text-center">"The path to success is always under construction"</p>
+
+        <p className="text-start">
+          I am a Fullstack Developer and UX designer, focused and ready for new challenges. The technologies I use are HTML5, CSS3, JavaScript, Jquery,
+          Bootstrap, Node Js, React Js, Python, Django, Flask, MongoDB, MySQL, PostgreSQL, Git, GitHub, WordPress, Azure DevOps Services and Figma.
+        </p>
+        <h1 className="content__title">certificate courses: </h1>
+        <div className="courses__content">{courses}</div>
+      </div>
+      <div className="container aos-init aos-animate mt-5" data-aos="fade-up">
+        <div className="row">
+          <div
+            className="
+            col-lg-6
+            d-flex
+            align-items-start
+            aos-init aos-animate
+            img-about
+          "
+          >
+            <img src={perfilPhoto} className="img-fluid" alt="" />
+          </div>
+          <div className="col-lg-6 pt-4 pt-lg-0 content aos-init aos-animate" data-aos="fade-left" data-aos-delay="100">
+            <div className="info">
+              <div className="list border-list text-start">
+                <label>Freelance:</label>
+                <p>Avalible</p>
+              </div>
+              <div className="list text-start">
+                <label>Country:</label>
+                <p>Venezuela</p>
+              </div>
+            </div>
+            <div className="social-icons m-3">{links}</div>
+            <h1 className="title text-center title-skills mb-4">Skills</h1>
+            <div className="skills-content">{habilities}</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AboutMe;

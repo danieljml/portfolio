@@ -1,0 +1,102 @@
+footer {
+  cursor: default;
+  padding: 70px 15px;
+  background-color: #232323;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer .info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  color: #fcfcfc;
+}
+
+footer .info label {
+  font-size: 1.1rem;
+}
+
+footer .info p,
+footer .info a {
+  color: #999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bx-mail-send {
+  font-size: 26px;
+  transition: all 0.7s ease;
+}
+
+footer .info p {
+  font-size: 1rem;
+  font-weight: 550;
+}
+
+footer .info a:hover {
+  color: #fcfcfc !important;
+}
+
+footer .info .bx:hover {
+  color: #fcfcfc !important;
+}
+
+footer .logo {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  font-size: 28px;
+  color: #fcfcfc;
+  font-weight: 700;
+}
+
+footer .text-footer {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  padding-top: 1rem;
+  color: #999999;
+}
+
+footer .social {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.footerSocial {
+  display: flex;
+  justify-content: center;
+}
+
+.copyright {
+  cursor: default;
+  background-color: #232323;
+  border-top: 1px solid #373a3e;
+  padding: 15px;
+}
+
+.copyright p {
+  color: #838383;
+  margin: 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 795px) {
+  .contact-us .contact-form {
+    padding: 38px 20px;
+  }
+
+  .contact-us .contact-form .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .copyright {
+    padding: 15px 15px 87px 15px;
+  }
+}

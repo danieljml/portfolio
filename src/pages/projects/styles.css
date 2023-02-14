@@ -1,0 +1,167 @@
+.cardProject {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.img-projects {
+  width: 95%;
+  display: block;
+  border-radius: 18px;
+  border: 1px solid rgb(51 51 51 / 18%);
+}
+
+.cardProjects {
+  position: relative;
+  margin: 2rem 0;
+}
+
+.row > .cardProjects {
+  padding: 0 !important;
+}
+
+.category-item {
+  text-transform: uppercase;
+}
+
+.overlay {
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 2;
+  border: 1px solid rgb(0 0 0 / 22%);
+  box-shadow: 0 0 32px -8px #464646;
+  background-color: rgba(227, 232, 234, 0.75);
+  backdrop-filter: saturate(180%) blur(25px);
+  z-index: 1;
+  border-radius: 18px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.5s ease;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.filter-buttons {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin: 2rem 0;
+}
+
+.filter-buttons ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.filter-buttons ul li {
+  color: #6d6d6d;
+  font-weight: 600;
+  font-size: 16px;
+  display: inline-block;
+  margin: 0px 5px;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 5px 25px;
+}
+
+.filter-buttons .active {
+  color: #f1f1f1;
+  padding: 5px 25px;
+  border-radius: 18px;
+  background-color: black;
+  padding-bottom: 0px;
+  transition: all 0.3s ease;
+}
+
+.filter-buttons ul li:hover {
+  color: #f1f1f1;
+  padding: 5px 25px;
+  border-radius: 18px;
+  background-color: black;
+}
+
+.overlay a {
+  border: 2px solid #3b3938;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 20px;
+  color: #000000 !important;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.overlay a:hover {
+  background-color: #000000;
+  color: #ffffff !important;
+}
+
+.overlay .bx {
+  padding-right: 5px;
+}
+
+.overlay a:hover .bx {
+  color: #f1f1f1;
+  padding-right: 5px;
+}
+
+.overlay .bx:hover {
+  color: #f1f1f1 !important;
+  padding-right: 5px;
+}
+
+.overlay a {
+  -webkit-animation: galleryIcon 0.8s ease;
+  animation: galleryIcon 0.8s ease;
+}
+
+.overlay h4 {
+  text-transform: uppercase;
+  display: inline-block;
+  font-family: 'Mulish', sans-serif;
+  padding-bottom: 5px;
+  font-size: 23px;
+  color: #3b3938;
+  font-weight: 900;
+  position: relative;
+}
+
+.overlay h4:before {
+  content: '';
+  left: 32%;
+  position: absolute;
+  height: 2px;
+  right: 32%;
+  border-radius: 15px;
+  background-color: #333;
+  bottom: 0px;
+}
+
+@media only screen and (max-width: 795px) {
+  .img-projects {
+    width: 100%;
+    display: block;
+    border-radius: 18px;
+    border: 1px solid rgb(51 51 51 / 18%);
+  }
+
+  .overlay {
+    right: 0;
+    width: 100%;
+  }
+}
