@@ -198,6 +198,7 @@ const Projects = () => {
       setActive(i);
       return;
     }
+    setProjectFilters(projectList);
     setActive(0);
   };
 
