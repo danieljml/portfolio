@@ -9,20 +9,21 @@ const Work = () => {
       dates: '01/2022 - 12/2022',
       company: 'Tutenlabs',
       position: 'Fullstack Developer',
-      description: 'I worked with azure DevOps Services, coding in Javascript, HTML, CSS, React also I worked somethings with Java, Spring Boot, PostgreSQL',
+      description:
+        'I worked with Scrum methodology, Azure DevOps Services, coding in Javascript, Node HTML, CSS, React also I worked somethings with Java, Spring Boot, PostgreSQL',
     },
     {
       dates: '01/2019 - 06/2021',
       company: 'Black and white solutions',
       position: 'Fullstack Developer',
       description:
-        'I worked with Azure DevOps Services, implementing apps from scratch using HTML5, CSS3, JavaScript, React, Python, PostgrestSQL, Flask, FastAPI and Django',
+        'I worked with Scrum methodology, Azure DevOps Services, implementing apps from scratch using HTML5, CSS3, JavaScript, Node, React, Python, PostgrestSQL, Flask, FastAPI and Django',
     },
     {
-      dates: '08/2019 - 12/2020',
+      dates: '08/2018 - 12/2020',
       company: 'Variedades monica.ca',
-      position: 'UX Designer and Fullstack Developer',
-      description: 'I worked with Wordpress, Figma for designs and implementing apps from scratch using HTML5, CSS3, JavaScript, PHP and MySQL',
+      position: 'UX Designer - Fullstack Developer',
+      description: 'I worked with Wordpress, Figma for designs and implementing apps from scratch using HTML5, CSS3, JavaScript, Node, Express, PHP and MySQL',
     },
   ];
   const works = workList.map(item => (
