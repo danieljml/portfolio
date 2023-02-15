@@ -40,7 +40,7 @@ const Work = () => {
     <section className="work" id="experience">
       <div className="container"></div>
       <h1 className="title text-center mt-4">WORK EXPERIENCE</h1>
-      <p className="text-center">+3 YEARS OF EXPERIENCE</p>
+      <p className="text-center">4 YEARS OF EXPERIENCE</p>
 
       <Container className="work__experience">{works}</Container>
     </section>
