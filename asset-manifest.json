@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Fullstack-Portfolio/static/css/main.5bbd432c.css",
-    "main.js": "/Fullstack-Portfolio/static/js/main.23b84689.js",
+    "main.js": "/Fullstack-Portfolio/static/js/main.49e9484d.js",
     "static/media/App-Movies.png": "/Fullstack-Portfolio/static/media/App-Movies.1428ab2f1684f161011e.png",
     "static/media/Video-1.png": "/Fullstack-Portfolio/static/media/Video-1.e248e46fd7658df6db31.png",
     "static/media/alejandro-escamilla-yC-Yzbqy7PY-unsplash.jpg": "/Fullstack-Portfolio/static/media/alejandro-escamilla-yC-Yzbqy7PY-unsplash.1d6f67ce8691f462a6ab.jpg",
@@ -21,14 +21,15 @@
     "static/media/custome-management.png": "/Fullstack-Portfolio/static/media/custome-management.a14f706e0f9408518c6b.png",
     "static/media/Weather-App.png": "/Fullstack-Portfolio/static/media/Weather-App.34f5550df1de7b535d5b.png",
     "static/media/Testimonials-Slider.png": "/Fullstack-Portfolio/static/media/Testimonials-Slider.bd1e011cc69c0220b19e.png",
+    "static/media/Pokemon-transfer.png": "/Fullstack-Portfolio/static/media/Pokemon-transfer.f91689ae376812682e9a.png",
     "static/media/App-Expenses.png": "/Fullstack-Portfolio/static/media/App-Expenses.8df0092cf31075d80a20.png",
     "static/media/Whatsapp-clone.png": "/Fullstack-Portfolio/static/media/Whatsapp-clone.e02fc4dd1e4f906b3fc5.png",
     "index.html": "/Fullstack-Portfolio/index.html",
     "main.5bbd432c.css.map": "/Fullstack-Portfolio/static/css/main.5bbd432c.css.map",
-    "main.23b84689.js.map": "/Fullstack-Portfolio/static/js/main.23b84689.js.map"
+    "main.49e9484d.js.map": "/Fullstack-Portfolio/static/js/main.49e9484d.js.map"
   },
   "entrypoints": [
     "static/css/main.5bbd432c.css",
-    "static/js/main.23b84689.js"
+    "static/js/main.49e9484d.js"
   ]
 }
