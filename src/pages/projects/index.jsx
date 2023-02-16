@@ -4,6 +4,8 @@ import shortid from 'shortid';
 import expenses from '../../images/App-Expenses.png';
 import Daw from '../../images/Form-Daw.png';
 import customers from '../../images/custome-management.png';
+import transfer from '../../images/Pokemon-transfer.png';
+
 import construction from '../../images/Homepage-Contruction.png';
 import slider from '../../images/Testimonials-Slider.png';
 import movies from '../../images/App-Movies.png';
@@ -44,6 +46,14 @@ const Projects = () => {
       h4: 'CUSTOMER MANAGEMENT',
       p: 'REACT JS - PYTHON - FLASK - MYSQL',
       href: 'https://github.com/danieljml/customer-management',
+      category: 'website',
+    },
+    {
+      dataAos: 'fade-right',
+      img: transfer,
+      h4: 'TRANSFER PLATFORM',
+      p: 'REACT - REACT FORM - MATERIAL UI - FIREBASE',
+      href: 'https://codesandbox.io/s/transaccion-app-with-firebase-r9m8hx',
       category: 'website',
     },
     {
