@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './styles.css';
 import shortid from 'shortid';
+import game from '../../images/Rock-Paper-Scissors.png';
+
 import expenses from '../../images/App-Expenses.png';
 import Daw from '../../images/Form-Daw.png';
 import customers from '../../images/custome-management.png';
@@ -16,6 +18,7 @@ import portafolio from '../../images/Portafolio.png';
 import blackAndWhite from '../../images/Black-and-white.png';
 import variedadesMonica from '../../images/Variedades-Monica.png';
 
+import expenses2 from '../../images/Expenses2.png';
 import card from '../../images/Card-Component.png';
 import article from '../../images/Article-Component.png';
 import testimonials from '../../images/Testimonials-grid-section-main.png';
@@ -34,11 +37,19 @@ const Projects = () => {
     },
     {
       dataAos: 'fade-right',
-      img: Daw,
-      h4: 'DAW COURSE PLATFORM',
-      p: 'HTML - CSS - JS - PHP - MYSQL',
-      href: 'https://github.com/danieljml/DAW-course-platform',
-      category: 'website',
+      img: game,
+      h4: 'ROCK PAPER SCISSORS',
+      p: 'REACT JS - FIREBASE - MATERIAL UI',
+      href: 'https://danieljml.github.io/Rock-Paper-Scissors/',
+      category: 'game',
+    },
+    {
+      dataAos: 'fade-right',
+      img: expenses2,
+      h4: 'EXPENSES CHART',
+      p: 'REACT JS',
+      href: 'https://codesandbox.io/s/expenses-chart-component-62du8b?file=/src/index.js',
+      category: 'desing',
     },
     {
       dataAos: 'fade-right',
@@ -91,6 +102,14 @@ const Projects = () => {
     },
     {
       dataAos: 'fade-right',
+      img: Daw,
+      h4: 'DAW COURSE PLATFORM',
+      p: 'HTML - CSS - JS - PHP - MYSQL',
+      href: 'https://github.com/danieljml/DAW-course-platform',
+      category: 'website',
+    },
+    {
+      dataAos: 'fade-right',
       img: weather,
       h4: 'APP WEATHER',
       p: 'REACT JS - API REST',
@@ -116,7 +135,7 @@ const Projects = () => {
     {
       dataAos: 'fade-left',
       img: slider,
-      h4: 'SLIDERS TESTIMONIALS',
+      h4: 'SLIDER TESTIMONIALS',
       p: 'HTML - CSS - JS',
       href: 'https://danieljml.github.io/Testimonials-Slider/',
       category: 'desing',
@@ -124,7 +143,7 @@ const Projects = () => {
     {
       dataAos: 'fade-right',
       img: card,
-      h4: 'DESING CARD',
+      h4: 'CARD',
       p: 'HTML - CSS',
       href: 'https://danieljml.github.io/Card-Component/',
       category: 'desing',
@@ -132,7 +151,7 @@ const Projects = () => {
     {
       dataAos: 'fade-up',
       img: article,
-      h4: 'DESING ARTICLE',
+      h4: 'ARTICLE',
       p: 'HTML - CSS - JS',
       href: 'https://danieljml.github.io/Frontend-Mentor/',
       category: 'desing',
@@ -140,7 +159,7 @@ const Projects = () => {
     {
       dataAos: 'fade-left',
       img: testimonials,
-      h4: 'DESING TESTIMONIALS',
+      h4: 'TESTIMONIALS',
       p: 'HTML - CSS',
       href: 'https://danieljml.github.io/Frontend-Mentor-Testimonials/',
       category: 'desing',
@@ -175,6 +194,7 @@ const Projects = () => {
     { dataTarget: 'website', title: 'Web' },
     { dataTarget: 'desing', title: 'Desing' },
     { dataTarget: 'video', title: 'Video' },
+    { dataTarget: 'game', title: 'Game' },
   ];
   const [projectFilters, setProjectFilters] = useState(projectList);
   const [active, setActive] = useState(0);
