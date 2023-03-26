@@ -12,62 +12,92 @@ import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 const AboutMe = () => {
   const skillList = [
     {
-      skill: 'HTML-100%',
+      skill: 'HTML',
       ariaValueNow: '100',
       progressBar: '100%',
     },
     {
-      skill: 'CSS-90%',
+      skill: 'CSS',
       ariaValueNow: '90',
       progressBar: '90%',
     },
     {
-      skill: 'Bootstrap-90%',
+      skill: 'Bootstrap',
       ariaValueNow: '90',
       progressBar: '90%',
     },
     {
-      skill: 'Material UI-90%',
+      skill: 'Material UI',
       ariaValueNow: '90',
       progressBar: '90%',
     },
     {
-      skill: 'JavaScript-90%',
+      skill: 'JavaScript',
       ariaValuenow: '90',
       progressBar: '90%',
     },
     {
-      skill: 'Node-80%',
+      skill: 'TypeScript',
+      ariaValuenow: '85',
+      progressBar: '85%',
+    },
+    {
+      skill: 'Node',
       ariaValueNow: '80',
       progressBar: '80%',
     },
     {
-      skill: 'React-80%',
-      ariaValueNow: '80',
-      progressBar: '80%',
+      skill: 'Express',
+      ariaValuenow: '90',
+      progressBar: '90%',
     },
     {
-      skill: 'Python-90%',
+      skill: 'React',
+      ariaValueNow: '85',
+      progressBar: '85%',
+    },
+    {
+      skill: 'Next',
+      ariaValueNow: '85',
+      progressBar: '85%',
+    },
+    {
+      skill: 'Python',
       ariaValueNow: '90',
       progressBar: '90%',
     },
     {
-      skill: 'FastApi-80%',
+      skill: 'Django',
+      ariaValueNow: '90',
+      progressBar: '90%',
+    },
+    {
+      skill: 'FastApi',
       ariaValueNow: '80',
       progressBar: '80%',
     },
     {
-      skill: 'MYSQL-80%',
+      skill: 'MYSQL',
       ariaValueNow: '80',
       progressBar: '80%',
     },
     {
-      skill: 'Figma-80%',
+      skill: 'MongoDB',
       ariaValueNow: '80',
       progressBar: '80%',
     },
     {
-      skill: 'Wordpress-80%',
+      skill: 'Firebase',
+      ariaValueNow: '85',
+      progressBar: '85%',
+    },
+    {
+      skill: 'Figma',
+      ariaValueNow: '80',
+      progressBar: '80%',
+    },
+    {
+      skill: 'Wordpress',
       ariaValueNow: '80',
       progressBar: '80%',
     },
@@ -96,9 +126,6 @@ const AboutMe = () => {
             aria-valuemin="0"
             aria-valuemax="100"
             style={{ width: item.progressBar }}
-            data-aos="fade-right"
-            data-aos-duration="500"
-            data-aos-easing="ease-in-sine"
           ></div>
         }
       </div>
@@ -160,20 +187,16 @@ const AboutMe = () => {
         <h1 className="content__title">certificate courses: </h1>
         <div className="courses__content">{courses}</div>
       </div>
-      <div className="container aos-init aos-animate mt-5" data-aos="fade-up">
+      <div className="container mt-5">
         <div className="row">
           <div
             className="
             col-lg-6
-            d-flex
-            align-items-start
-            aos-init aos-animate
-            img-about
-          "
+            container__image px-md-5"
           >
             <img src={perfilPhoto} className="img-fluid" alt="perfil" loading="lazy" />
           </div>
-          <div className="col-lg-6 pt-4 pt-lg-0 content aos-init aos-animate" data-aos="fade-left" data-aos-delay="100">
+          <div className="col-lg-6 pt-4 pt-lg-0 content">
             <div className="info">
               <div className="list border-list text-start">
                 <label>Freelance:</label>

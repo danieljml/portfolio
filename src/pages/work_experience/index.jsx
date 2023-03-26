@@ -23,7 +23,8 @@ const Work = () => {
       dates: '08/2018 - 12/2020',
       company: 'Variedades monica.ca',
       position: 'UX Designer - Fullstack Developer',
-      description: 'I worked with Wordpress, Figma for designs and implementing apps from scratch using HTML5, CSS3, JavaScript, Node, Express, PHP and MySQL',
+      description:
+        'I worked with Wordpress, Figma for designs and implementing apps from scratch using HTML5, CSS3, JavaScript, Node, Express, PHP, Python and MySQL',
     },
   ];
   const works = workList.map(item => (
@@ -40,7 +41,7 @@ const Work = () => {
     <section className="work" id="experience">
       <div className="container"></div>
       <h1 className="title text-center mt-4">WORK EXPERIENCE</h1>
-      <p className="text-center">4 YEARS OF EXPERIENCE</p>
+      <p className="text-center">4+ YEARS OF EXPERIENCE</p>
 
       <Container className="work__experience">{works}</Container>
     </section>

@@ -32,7 +32,7 @@ const Services = () => {
   ];
 
   const services = servicesList.map(item => (
-    <div className="card col-12 col-lg-5" data-aos={item.dataAos} data-aos-duration="1000" key={shortid.generate()}>
+    <div className="card col-12 col-lg-5" key={shortid.generate()}>
       <div className="icon">{item.icon}</div>
       <h5>{item.title}</h5>
       <p>{item.description}</p>
