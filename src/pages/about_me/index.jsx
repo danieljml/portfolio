@@ -111,7 +111,11 @@ const AboutMe = () => {
       icon: <BsWhatsapp />,
       description: 'Whatsapp',
     },
-    { link: '../pdf/Curriculum Daniel-Martinez en.pdf', icon: <BsFileEarmarkPdfFill />, description: 'Download CV' },
+    {
+      link: 'https://firebasestorage.googleapis.com/v0/b/fullstack-developer-444f5.appspot.com/o/Curriculum%20Daniel-Martinez-en.pdf?alt=media&token=ad4ea0a9-6139-4ac2-afd2-5889a8532453',
+      icon: <BsFileEarmarkPdfFill />,
+      description: 'View CV',
+    },
   ];
 
   const habilities = skillList.map(item => (

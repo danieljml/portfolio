@@ -6,6 +6,12 @@ import './styles.css';
 const Work = () => {
   const workList = [
     {
+      dates: '2023 - PRESENT',
+      company: 'Freelance',
+      position: 'Fullstack Developer',
+      description: 'I worked coding in Javascript/TypeScript, React, Node, Express, Python, Django, MongoDB y Firebase',
+    },
+    {
       dates: '01/2022 - 12/2022',
       company: 'Tutenlabs',
       position: 'Fullstack Developer',
@@ -13,14 +19,14 @@ const Work = () => {
         'I worked with Scrum methodology, Azure DevOps Services, coding in Javascript, Node HTML, CSS, React also I worked somethings with Java, Spring Boot, PostgreSQL',
     },
     {
-      dates: '01/2019 - 06/2021',
+      dates: '2019 - 2021',
       company: 'Black and white solutions',
       position: 'Fullstack Developer',
       description:
         'I worked with Scrum methodology, Azure DevOps Services, implementing apps from scratch using HTML5, CSS3, JavaScript, Node, React, Python, PostgrestSQL, Flask, FastAPI and Django',
     },
     {
-      dates: '08/2018 - 12/2020',
+      dates: '2018 - 2020',
       company: 'Variedades monica.ca',
       position: 'UX Designer - Fullstack Developer',
       description:
@@ -41,7 +47,7 @@ const Work = () => {
     <section className="work" id="experience">
       <div className="container"></div>
       <h1 className="title text-center mt-4">WORK EXPERIENCE</h1>
-      <p className="text-center">4+ YEARS OF EXPERIENCE</p>
+      <p className="text-center">5+ YEARS OF EXPERIENCE</p>
 
       <Container className="work__experience">{works}</Container>
     </section>
